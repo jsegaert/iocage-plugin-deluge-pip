@@ -1,0 +1,16 @@
+  ____       _                  
+ |  _ \  ___| |_   _  __ _  ___ 
+ | | | |/ _ \ | | | |/ _` |/ _ \
+ | |_| |  __/ | |_| | (_| |  __/
+ |____/ \___|_|\__,_|\__, |\___|
+                     |___/      
+
+Deluge is a lightweight, Free Software, cross-platform BitTorrent client.
+For more info, see https://www.deluge-torrent.org/
+
+DEFAULT SETTINGS:
+
+        The WebUI is at http://xxx.yyy.zzz.aaa:8112/
+        The initial password for the WebUI is "deluge"
+        The download directory is /home/deluge/Downloads
+
