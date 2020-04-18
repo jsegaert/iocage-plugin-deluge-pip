@@ -7,7 +7,6 @@ chown -R deluge:deluge /home/deluge/
 
 mkdir /Downloads
 chown deluge:deluge /Downloads
-/usr/local/lib/python3.7/site-packages/deluge/
 
 # Install the system
 pip install --upgrade pip
