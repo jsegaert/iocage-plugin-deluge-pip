@@ -1,9 +1,17 @@
 #!/bin/sh
 
-# Create media user
+# Prepare the system
 pw useradd -n deluge -u 8675309 -m -c "Deluge BitTorrent Client" -s /usr/sbin/nologin -w no
 mkdir -p /home/deluge/.config/deluge     
 chown -R deluge:deluge /home/deluge/
+
+mkdir /Downloads
+chown deluge:deluge /Downloads
+/usr/local/lib/python3.7/site-packages/deluge/
+
+# Install the system
+pip install --upgrade pip
+pip install deluge
 
 # Configure the services
 sysrc -f /etc/rc.conf deluged_enable="YES"
