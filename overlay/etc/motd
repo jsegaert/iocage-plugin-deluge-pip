@@ -11,6 +11,6 @@ For more info, see https://www.deluge-torrent.org/
 DEFAULT SETTINGS:
 
         The WebUI is at http://xxx.yyy.zzz.aaa:8112/
-        The initial password for the WebUI is "deluge"
-        The download directory is /home/deluge/Downloads
+        The initial password for the WebUI is: deluge
+        The default download directory is: /Downloads
 
