@@ -13,7 +13,7 @@ pip install --upgrade pip
 pip install deluge
 
 # Install fix for https://dev.deluge-torrent.org/ticket/3278
-patch -F 0 /usr/local/lib/python3.7/site-packages/deluge/argparserbase.py /usr/local/etc/deluge_changeset_1b4ac88ce.patch
+patch -F 0 /usr/local/lib/python3.8/site-packages/deluge/argparserbase.py /usr/local/etc/deluge_changeset_1b4ac88ce.patch
 
 # Configure the services
 sysrc -f /etc/rc.conf deluged_enable="YES"
