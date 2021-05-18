@@ -34,7 +34,7 @@ name="deluged"
 rcvar=deluged_enable
 
 command=/usr/local/bin/${name}
-command_interpreter=/usr/local/bin/python3.7
+command_interpreter=/usr/local/bin/python3.8
 
 pidfile=/var/run/${name}/pid
 
