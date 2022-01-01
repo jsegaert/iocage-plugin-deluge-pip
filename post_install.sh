@@ -12,14 +12,6 @@ chown deluge:deluge /Downloads
 pip install --upgrade pip
 pip install deluge
 
-# Install fix for https://dev.deluge-torrent.org/ticket/3278
-patch -F 0 /usr/local/lib/python3.8/site-packages/deluge/argparserbase.py /usr/local/etc/deluge_changeset_1b4ac88ce.patch
-
-# Install patch to 'Fix warning related to gettext'
-# Refer to:  https://dev.deluge-torrent.org/changeset/d6c96d629183e8bab
-# Submitted by jbeez [Jeremiah Bright]
-patch -F 0 /usr/local/lib/python3.8/site-packages/deluge/i18n/util.py /usr/local/etc/deluge_changeset_d6c96d.patch
-
 # Configure the services
 sysrc -f /etc/rc.conf deluged_enable="YES"
 sysrc -f /etc/rc.conf deluged_user="deluge"
