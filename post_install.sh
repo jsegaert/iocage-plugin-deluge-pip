@@ -9,8 +9,9 @@ mkdir /Downloads
 chown deluge:deluge /Downloads
 
 # Install the packages
-pip install --upgrade pip
-pip install deluge
+python3.8 -m ensurepip
+python3.8 -m pip install --upgrade pip
+python3.8 -m pip install deluge
 
 # Configure the services
 sysrc -f /etc/rc.conf deluged_enable="YES"
