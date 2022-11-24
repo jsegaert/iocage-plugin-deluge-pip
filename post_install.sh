@@ -12,6 +12,12 @@ chown deluge:deluge /Downloads
 pip install --upgrade pip
 pip install deluge
 
+portsnap fetch update
+portsnap fetch extract
+portdowngrade net-p2p/py-libtorrent-rasterbar r569235
+cd ./py-libtorrent-rasterbar
+make install clean
+
 # Configure the services
 sysrc -f /etc/rc.conf deluged_enable="YES"
 sysrc -f /etc/rc.conf deluged_user="deluge"
