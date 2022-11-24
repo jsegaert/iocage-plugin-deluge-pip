@@ -12,7 +12,6 @@ chown -R deluge:deluge /home/deluge/
 
 mkdir /Downloads
 chown deluge:deluge /Downloads
-chown deluge:deluge /mnt/torrent
 
 # Install the packages
 pip install --upgrade pip
@@ -39,4 +38,3 @@ echo "The default download directory is: /Downloads" >> /root/PLUGIN_INFO
 # Start the services
 service deluged start
 service deluge_web start
-
