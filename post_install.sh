@@ -1,10 +1,5 @@
 #!/bin/sh
 
-# Install all needed packages
-pkg update
-pkg install ca_root_nss python39 py39-boost-libs py39-chardet py39-distro py39-mako py39-pillow py39-pip py39-twisted py39-rencode py39-setproctitle py39-xdg b2 libtorrent-rasterbar portdowngrade rust subversion
-
-
 # Prepare the system
 pw useradd -n deluge -u 8675309 -m -c "Deluge BitTorrent Client" -s /usr/sbin/nologin -w no
 mkdir -p /home/deluge/.config/deluge     
