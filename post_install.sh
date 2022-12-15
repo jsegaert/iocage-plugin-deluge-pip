@@ -15,7 +15,7 @@ pip install deluge
 # install working py-libtorrent-rasterbar from ports
 rm -rf /var/db/portsnap/*
 rm -rf /usr/ports
-portsnap fetch
+portsnap --interactive fetch
 portsnap update
 portsnap extract
 cd /root
