@@ -13,10 +13,14 @@ pip install --upgrade pip
 pip install deluge
 
 # install working py-libtorrent-rasterbar from ports
-portsnap fetch update
-portsnap fetch extract
+rm -rf /var/db/portsnap/*
+rm -rf /usr/ports
+portsnap fetch
+portsnap update
+portsnap extract
+cd /root
 portdowngrade net-p2p/py-libtorrent-rasterbar r569235
-cd ./py-libtorrent-rasterbar
+cd /root/py-libtorrent-rasterbar
 make deinstall install clean
 
 # Configure the services
