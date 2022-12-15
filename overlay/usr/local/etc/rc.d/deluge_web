@@ -34,9 +34,9 @@ name="deluge_web"
 rcvar=${name}_enable
 
 command=/usr/local/bin/deluge-web
-#command_interpreter=/usr/local/bin/python3.8
+#command_interpreter=/usr/local/bin/python3.9
 
-procname="/usr/local/bin/python3.8"
+procname="/usr/local/bin/python3.9"
 pidfile="/var/run/${name}/pid"
 
 start_precmd=${name}_prestart
